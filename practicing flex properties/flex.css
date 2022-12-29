@@ -1,0 +1,29 @@
+.parent{
+    display:flex;
+    flex-flow:row wrap;
+    background-color: skyblue;
+    justify-content: center;
+    padding:1rem;
+}
+.child{
+background-color: white;
+color: rgb(161, 31, 53);
+flex-basis:10rem;
+text-align: center;
+font-size: 2rem;
+font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.child:nth-of-type(2n){
+    flex-grow:2;
+    font-weight: bold;
+    color:white;
+    background-color: blue;
+}
+
+header{
+    text-align: center;
+    background-color: blueviolet;
+    margin:0;
+    padding:1rem;
+    color:white;
+}

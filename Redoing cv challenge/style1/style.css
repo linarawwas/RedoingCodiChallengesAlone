@@ -1,0 +1,205 @@
+body{
+    background-color: black;
+    margin:0 19%;
+
+}
+
+.content{
+       display: flex;
+       flex-flow: row wrap;
+       background-color: white;
+       padding:0 10px;
+justify-content: center;  
+justify-items: center;
+}
+#hobbies{
+flex-grow:1;
+margin-left:10%;
+}
+    .content section{
+        flex-basis:450px;
+    }
+    header{
+background-color: gray;
+color:red;
+padding-bottom:10px;
+  }
+
+    header div{
+        display:flex;
+     flex-flow: row wrap;
+padding-left:0;
+margin:auto 10%;
+align-items: center;
+
+    }
+    hgroup{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+        padding:0;
+    }
+    hgroup, figure{
+        flex-basis:230px;
+    }
+    img{
+        border-radius: 50%;
+        width:40%;
+    }
+    #about, #competencies{
+        margin-top:4rem;
+    }
+    section h3{
+        padding-bottom:9px;
+        font-size: 1.2em;
+        border-bottom: 1px solid rgb(195, 190, 190);
+    }
+    section h3::before{
+        content:' ';
+background-color: red;
+border-radius: 50%;
+display: inline-block;
+padding: 10px;
+margin-right: 5px;
+    }
+    .skill{
+        display:block;
+        color:white;
+        margin:3px;
+        background-color: rgb(183, 181, 181);
+        height:25px;
+        padding: 3px;
+
+    }
+    .skills-primary::before{
+        content:'Main';
+    }
+    .skills-secondary::before{
+content:'Other';
+    }
+    .skills-secondary .skill{
+        opacity:0.7;
+    }
+    [data-skill="5"] span{
+        display:inline-block;
+        width:50%;
+        background-color: red;
+        padding:3px;
+    }
+    [data-skill="3"] span{
+        display:inline-block;
+        width:30%;
+        background-color: red;
+        padding:3px;
+    }
+    [data-skill="1"] span{
+        display:inline-block;
+        width:10%;
+        background-color: red;
+        padding:3px;
+    }
+    [data-skill="9"] span{
+        display:inline-block;
+        width:90%;
+        background-color: red;
+        padding:3px;
+    }
+    [data-skill="7"] span{
+        display:inline-block;
+        width:70%;
+        background-color: red;
+        padding:3px;
+    }
+    .experience-date-separator{
+        color:red;
+        font-weight: bold;
+    }
+    .experience-type{
+        font-weight: bold;
+        color:red;
+    }
+    .experience-type::after{
+        content:'@';
+        margin-left:2px;
+    }
+    .experience-institution{
+        color:red;
+        font-weight: lighter;
+    }
+.experience-details{
+    color:gray;
+}
+.experience-location::before{
+content:'In';
+}
+.experience-location::after{
+content:'on';
+}
+ @media only screen and (min-width: 1461px){
+    #contact{
+        position:absolute;
+        right:19%;
+        top:0.5rem;
+        left:50%;
+     }
+    #contact h3{
+        display:none;
+    }
+    .contacts{
+        display:flex;
+    flex-flow:row wrap;
+        margin:0;
+    }
+    .contact{
+        display:flex;
+        flex-basis:700px;
+        margin:0;
+    }
+    .contact-type{
+        width:200px;
+        padding:3px;
+        margin:0;
+        color:white;
+        background-color: red;
+    }
+    .contact-value{
+        width:100%;
+        padding:3px;
+        margin:0;
+        color:red;
+        background-color: black;
+    }
+   
+}
+@media only screen and (max-width: 1460px){
+    #contact{
+        position:static;
+    }
+    #contact h3{
+        display:inline-block;
+    }
+    .contact-value{
+        padding:3px;
+        margin:0;
+        color:red;
+        background-color: white ;
+
+    }
+    dt{
+        color:white;
+        background-color: red;
+        flex-basis:120px;
+    }
+    .contacts{
+        display:flex;
+        flex-flow:row wrap;
+    }
+    dl{
+        flex-basis:500px;
+        flex-shrink:1;
+        display:flex;
+        flex-flow:row nowrap;
+        margin:0 10px;
+    }
+}
