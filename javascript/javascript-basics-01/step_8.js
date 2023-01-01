@@ -1,9 +1,9 @@
-function Age(){
-    var age = document.getElementById("age").value;
-    if(age >= 18){
-      alert("you are over 18")
+function getAge(){
+    var age = document.getElementById("age").value 
+    if (age>18){
+        var msg= 'you are over 18'
     }else{
-     alert("you are under 18")
+        var msg='you are under 18'
     }
-};
-Age();
+    alert( msg)
+}
