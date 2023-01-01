@@ -1,11 +1,10 @@
-const texte = document.getElementById("texte");
-function visible(something){
-    if(something==="appear"){
-        texte.style.display="grid";
-        texte.style.gridTemplateColumns="50%";
-        texte.style.transform="rotate(270deg)";
-    } 
-    else if(something==="disappear"){
-        texte.style.display="none";
-    };
-};
+document.getElementById("show").addEventListener('click',showHide("yes"))
+document.getElementById("hide").addEventListener('click',showHide("no"))
+var variable;
+function showHide(variable){
+   if(variable==  "yes"){ document.getElementById("text").style.display="none";}
+   else if(variable=="no") {
+    document.getElementById("text").style.display="block";
+   }else{            document.getElementById("text").style.display="block";
+}
+    }    
